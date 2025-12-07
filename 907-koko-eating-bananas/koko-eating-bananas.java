@@ -20,7 +20,7 @@ class Solution {
     private long hour(int[] piles, int k){
         long total =0L;
         for(int p : piles){
-            total += (p+k-1)/k;
+            total += Math.ceil((double)p/k);
         }
         return total;
     }
