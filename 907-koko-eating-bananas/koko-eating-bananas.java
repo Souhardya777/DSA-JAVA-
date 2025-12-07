@@ -6,10 +6,10 @@ class Solution {
             high=e;
         }
         int low = 1;
-        while(low<high){
+        while(low<=high){
             int mid = low+(high-low)/2;
             if(hour(piles,mid)<=h){
-                high = mid;
+                high = mid-1;
             }
             else
                 low = mid+1;
